@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://btmjdndi7tyqf"]
+
+[ext_resource type="Texture2D" uid="uid://3ftgn01y6j7s" path="res://assets/Hammer.png" id="1_obpir"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fy4dv"]
+size = Vector2(50, 20)
+
+[node name="Hammer" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(2, 0)
+scale = Vector2(5, 5)
+texture = ExtResource("1_obpir")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -15)
+shape = SubResource("RectangleShape2D_fy4dv")
